@@ -1,17 +1,17 @@
 #include<stdio.h>
 
-void PassByRef(int *x){
-
+void passByRefarence(int *x){
     *x = 20;
 }
-int main(){
+
+int main ()
+{
 
     int x;
-    printf("Enter X : ");
+    printf("Enter a value : ");
     scanf("%d", &x);
 
-    PassByRef(&x);
-
-    printf("After calling function with referance : %d", x);
+    passByRefarence(&x);
+    printf("After passing refarence of variable x : %d", x);
     return 0;
 }
