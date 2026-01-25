@@ -2,12 +2,13 @@
 int main(){
 
     int X = 10;
-    printf("%d\n", X);
-    printf("%p\n", &X);
+    printf("%d \n", X);
+    printf("%p \n", &X);
     
-    int* ptr;
-    ptr = &X;
-    printf("%p\n", ptr);
-    printf("%p\n", &ptr);
+    int *ptr = &X;
+    printf("%p \n", ptr);
+    
+    *ptr = 20;
+    printf("%d \n", X);
 
 }
