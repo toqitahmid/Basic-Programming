@@ -3,21 +3,15 @@
 
 void YourName(char name[]){
 
-    printf("Name : %s", name);
+    printf("%s ", name);
 }
-
 
 
 int main(){
     
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-    
-    char name[100];
+    char name[101];
     printf("Enter your name : ");
-    fgets(name,sizeof(name),stdin);
+    fgets(name, sizeof(name), stdin);
 
     YourName(name);
     return 0;
