@@ -7,7 +7,7 @@ int main(){
     cout << x << endl;
 
     int *ptr = new int;
-    *ptr = 20;
+    *ptr = 50;
     cout << *ptr << endl;
 
 }
